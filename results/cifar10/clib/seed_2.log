@@ -1,0 +1,80 @@
+[INFO] main.py:39 > Namespace(agem_batch=240, batchsize=16, binary=False, data_dir=None, dataset='cifar10', debug=False, distilling=True, eval_period=100, gpu_transform=True, imp_update_period=1, init_model=False, init_opt=False, log_path='results', lr=0.0003, lr_length=10, lr_period=10, lr_step=0.95, m=10, memory_epoch=256, memory_size=500, mir_cands=50, mode='clib', model_name='resnet18', n=50, n_tasks=5, n_worker=0, note='clib', num_gpus=1, online_iter=1.0, opt_name='adam', reg_coef=100, rnd_seed=2, sched_name='default', temp_batchsize=None, topk=1, transforms=['cutmix', 'autoaug'], use_amp=True, workers_per_gpu=1)
+[INFO] main.py:48 > Set the device (cuda)
+[INFO] main.py:94 > Using train-transforms Compose(
+    RandomCrop(size=(32, 32), padding=4)
+    RandomHorizontalFlip(p=0.5)
+    AutoAugment(policy=AutoAugmentPolicy.CIFAR10, fill=None)
+    ConvertImageDtype()
+    Normalize(mean=(0.4914, 0.4822, 0.4465), std=(0.2023, 0.1994, 0.201))
+)
+[INFO] main.py:104 > [1] Select a CIL method (clib)
+[INFO] main.py:110 > [2] Incrementally training 5 tasks
+[INFO] main.py:123 > [2-1] Prepare a datalist for the current task
+[INFO] er_baseline.py:202 > Train | Sample # 2 | train_loss 0.0000 | train_acc 1.0000 | lr 0.000300 | running_time 0:00:00 | ETA 4:27:22
+[INFO] er_baseline.py:202 > Train | Sample # 4 | train_loss 0.6358 | train_acc 0.7500 | lr 0.000300 | running_time 0:00:00 | ETA 2:18:47
+[INFO] er_baseline.py:202 > Train | Sample # 6 | train_loss 0.7794 | train_acc 0.5000 | lr 0.000300 | running_time 0:00:00 | ETA 1:36:06
+[INFO] er_baseline.py:202 > Train | Sample # 8 | train_loss 0.7229 | train_acc 0.5625 | lr 0.000300 | running_time 0:00:00 | ETA 1:19:03
+[INFO] er_baseline.py:202 > Train | Sample # 10 | train_loss 0.6845 | train_acc 0.6000 | lr 0.000300 | running_time 0:00:00 | ETA 1:05:28
+[INFO] er_baseline.py:202 > Train | Sample # 12 | train_loss 0.6978 | train_acc 0.5833 | lr 0.000300 | running_time 0:00:00 | ETA 0:56:33
+[INFO] er_baseline.py:202 > Train | Sample # 14 | train_loss 0.7213 | train_acc 0.5714 | lr 0.000300 | running_time 0:00:00 | ETA 0:50:15
+[INFO] er_baseline.py:202 > Train | Sample # 16 | train_loss 0.7215 | train_acc 0.5000 | lr 0.000300 | running_time 0:00:00 | ETA 0:45:36
+[INFO] er_baseline.py:202 > Train | Sample # 18 | train_loss 0.6963 | train_acc 0.5000 | lr 0.000300 | running_time 0:00:00 | ETA 0:41:55
+[INFO] er_baseline.py:202 > Train | Sample # 20 | train_loss 0.7037 | train_acc 0.5312 | lr 0.000300 | running_time 0:00:00 | ETA 0:38:56
+[INFO] er_baseline.py:202 > Train | Sample # 22 | train_loss 0.6542 | train_acc 0.6250 | lr 0.000285 | running_time 0:00:00 | ETA 0:36:34
+[INFO] er_baseline.py:202 > Train | Sample # 24 | train_loss 0.6683 | train_acc 0.5000 | lr 0.000285 | running_time 0:00:00 | ETA 0:34:39
+[INFO] er_baseline.py:202 > Train | Sample # 26 | train_loss 0.6634 | train_acc 0.5312 | lr 0.000285 | running_time 0:00:01 | ETA 0:34:14
+[INFO] er_baseline.py:202 > Train | Sample # 28 | train_loss 0.7561 | train_acc 0.4688 | lr 0.000285 | running_time 0:00:01 | ETA 0:32:40
+[INFO] er_baseline.py:202 > Train | Sample # 30 | train_loss 0.7282 | train_acc 0.4688 | lr 0.000285 | running_time 0:00:01 | ETA 0:31:20
+[INFO] er_baseline.py:202 > Train | Sample # 32 | train_loss 0.7217 | train_acc 0.4688 | lr 0.000285 | running_time 0:00:01 | ETA 0:30:10
+[INFO] er_baseline.py:202 > Train | Sample # 34 | train_loss 0.7304 | train_acc 0.4375 | lr 0.000285 | running_time 0:00:01 | ETA 0:29:07
+[INFO] er_baseline.py:202 > Train | Sample # 36 | train_loss 0.6885 | train_acc 0.5625 | lr 0.000285 | running_time 0:00:01 | ETA 0:28:08
+[INFO] er_baseline.py:202 > Train | Sample # 38 | train_loss 0.7231 | train_acc 0.5000 | lr 0.000285 | running_time 0:00:01 | ETA 0:27:21
+[INFO] er_baseline.py:202 > Train | Sample # 40 | train_loss 0.7145 | train_acc 0.5312 | lr 0.000285 | running_time 0:00:01 | ETA 0:26:35
+[INFO] er_baseline.py:202 > Train | Sample # 42 | train_loss 0.7621 | train_acc 0.5000 | lr 0.000300 | running_time 0:00:01 | ETA 0:25:54
+[INFO] er_baseline.py:202 > Train | Sample # 44 | train_loss 0.6898 | train_acc 0.5938 | lr 0.000300 | running_time 0:00:01 | ETA 0:26:09
+[INFO] er_baseline.py:202 > Train | Sample # 46 | train_loss 0.6839 | train_acc 0.5312 | lr 0.000300 | running_time 0:00:01 | ETA 0:25:36
+[INFO] er_baseline.py:202 > Train | Sample # 48 | train_loss 0.7082 | train_acc 0.4375 | lr 0.000300 | running_time 0:00:01 | ETA 0:25:06
+[INFO] er_baseline.py:202 > Train | Sample # 50 | train_loss 0.6712 | train_acc 0.5625 | lr 0.000300 | running_time 0:00:01 | ETA 0:24:35
+[INFO] er_baseline.py:202 > Train | Sample # 52 | train_loss 0.7523 | train_acc 0.2812 | lr 0.000300 | running_time 0:00:01 | ETA 0:24:08
+[INFO] er_baseline.py:202 > Train | Sample # 54 | train_loss 0.7192 | train_acc 0.3125 | lr 0.000300 | running_time 0:00:01 | ETA 0:23:45
+[INFO] er_baseline.py:202 > Train | Sample # 56 | train_loss 0.7281 | train_acc 0.3750 | lr 0.000300 | running_time 0:00:01 | ETA 0:23:27
+[INFO] er_baseline.py:202 > Train | Sample # 58 | train_loss 0.6624 | train_acc 0.5625 | lr 0.000300 | running_time 0:00:01 | ETA 0:23:15
+[INFO] er_baseline.py:202 > Train | Sample # 60 | train_loss 0.6774 | train_acc 0.5938 | lr 0.000300 | running_time 0:00:01 | ETA 0:23:08
+[INFO] er_baseline.py:202 > Train | Sample # 62 | train_loss 0.7159 | train_acc 0.4375 | lr 0.000285 | running_time 0:00:01 | ETA 0:23:08
+[INFO] er_baseline.py:202 > Train | Sample # 64 | train_loss 0.6357 | train_acc 0.6562 | lr 0.000285 | running_time 0:00:01 | ETA 0:22:51
+[INFO] er_baseline.py:202 > Train | Sample # 66 | train_loss 0.7555 | train_acc 0.4688 | lr 0.000285 | running_time 0:00:01 | ETA 0:22:33
+[INFO] er_baseline.py:202 > Train | Sample # 68 | train_loss 0.7131 | train_acc 0.4375 | lr 0.000285 | running_time 0:00:01 | ETA 0:22:17
+[INFO] er_baseline.py:202 > Train | Sample # 70 | train_loss 0.7269 | train_acc 0.3750 | lr 0.000285 | running_time 0:00:01 | ETA 0:22:01
+[INFO] er_baseline.py:202 > Train | Sample # 72 | train_loss 0.7020 | train_acc 0.5000 | lr 0.000285 | running_time 0:00:01 | ETA 0:21:48
+[INFO] er_baseline.py:202 > Train | Sample # 74 | train_loss 0.6701 | train_acc 0.5938 | lr 0.000285 | running_time 0:00:01 | ETA 0:21:38
+[INFO] er_baseline.py:202 > Train | Sample # 76 | train_loss 1.2531 | train_acc 0.0938 | lr 0.000285 | running_time 0:00:01 | ETA 0:21:27
+[INFO] er_baseline.py:202 > Train | Sample # 78 | train_loss 1.0546 | train_acc 0.4062 | lr 0.000285 | running_time 0:00:01 | ETA 0:21:17
+[INFO] er_baseline.py:202 > Train | Sample # 80 | train_loss 0.8746 | train_acc 0.6875 | lr 0.000285 | running_time 0:00:02 | ETA 0:21:32
+[INFO] er_baseline.py:202 > Train | Sample # 82 | train_loss 0.8216 | train_acc 0.4062 | lr 0.000300 | running_time 0:00:02 | ETA 0:21:22
+[INFO] er_baseline.py:202 > Train | Sample # 84 | train_loss 0.7676 | train_acc 0.4688 | lr 0.000300 | running_time 0:00:02 | ETA 0:21:12
+[INFO] er_baseline.py:202 > Train | Sample # 86 | train_loss 0.7654 | train_acc 0.3750 | lr 0.000300 | running_time 0:00:02 | ETA 0:21:02
+[INFO] er_baseline.py:202 > Train | Sample # 88 | train_loss 0.6992 | train_acc 0.5000 | lr 0.000300 | running_time 0:00:02 | ETA 0:20:54
+[INFO] er_baseline.py:202 > Train | Sample # 90 | train_loss 0.7474 | train_acc 0.4688 | lr 0.000300 | running_time 0:00:02 | ETA 0:20:45
+[INFO] er_baseline.py:202 > Train | Sample # 92 | train_loss 0.7352 | train_acc 0.5000 | lr 0.000300 | running_time 0:00:02 | ETA 0:20:39
+[INFO] er_baseline.py:202 > Train | Sample # 94 | train_loss 0.6816 | train_acc 0.5000 | lr 0.000300 | running_time 0:00:02 | ETA 0:20:33
+[INFO] er_baseline.py:202 > Train | Sample # 96 | train_loss 0.7379 | train_acc 0.3438 | lr 0.000300 | running_time 0:00:02 | ETA 0:20:46
+[INFO] er_baseline.py:202 > Train | Sample # 98 | train_loss 0.7090 | train_acc 0.4688 | lr 0.000300 | running_time 0:00:02 | ETA 0:20:38
+[INFO] er_baseline.py:202 > Train | Sample # 100 | train_loss 0.8180 | train_acc 0.5000 | lr 0.000300 | running_time 0:00:02 | ETA 0:20:31
+[INFO] er_baseline.py:212 > Test | Sample # 100 | test_loss 2.4208 | test_acc 0.3430 | 
+[INFO] er_baseline.py:202 > Train | Sample # 102 | train_loss 0.6814 | train_acc 0.5938 | lr 0.000285 | running_time 0:00:03 | ETA 0:28:46
+[INFO] er_baseline.py:202 > Train | Sample # 104 | train_loss 0.7041 | train_acc 0.5000 | lr 0.000285 | running_time 0:00:03 | ETA 0:28:30
+[INFO] er_baseline.py:202 > Train | Sample # 106 | train_loss 0.7004 | train_acc 0.5938 | lr 0.000285 | running_time 0:00:03 | ETA 0:28:14
+[INFO] er_baseline.py:202 > Train | Sample # 108 | train_loss 0.7121 | train_acc 0.5000 | lr 0.000285 | running_time 0:00:03 | ETA 0:28:17
+[INFO] er_baseline.py:202 > Train | Sample # 110 | train_loss 0.6702 | train_acc 0.5625 | lr 0.000285 | running_time 0:00:03 | ETA 0:28:01
+[INFO] er_baseline.py:202 > Train | Sample # 112 | train_loss 0.8542 | train_acc 0.5938 | lr 0.000285 | running_time 0:00:03 | ETA 0:27:47
+[INFO] er_baseline.py:202 > Train | Sample # 114 | train_loss 0.8486 | train_acc 0.5000 | lr 0.000285 | running_time 0:00:03 | ETA 0:27:32
+[INFO] er_baseline.py:202 > Train | Sample # 116 | train_loss 0.6667 | train_acc 0.5625 | lr 0.000285 | running_time 0:00:03 | ETA 0:27:20
+[INFO] er_baseline.py:202 > Train | Sample # 118 | train_loss 0.7075 | train_acc 0.5938 | lr 0.000285 | running_time 0:00:03 | ETA 0:27:08
+[INFO] er_baseline.py:202 > Train | Sample # 120 | train_loss 0.6758 | train_acc 0.6875 | lr 0.000285 | running_time 0:00:03 | ETA 0:26:58
+[INFO] er_baseline.py:202 > Train | Sample # 122 | train_loss 0.9025 | train_acc 0.3125 | lr 0.000300 | running_time 0:00:03 | ETA 0:26:50
+[INFO] er_baseline.py:202 > Train | Sample # 124 | train_loss 0.9273 | train_acc 0.4062 | lr 0.000300 | running_time 0:00:04 | ETA 0:26:53
+[INFO] er_baseline.py:202 > Train | Sample # 126 | train_loss 0.7644 | train_acc 0.4375 | lr 0.000300 | running_time 0:00:04 | ETA 0:26:53
+[INFO] er_baseline.py:202 > Train | Sample # 128 | train_loss 0.7080 | train_acc 0.5938 | lr 0.000300 | running_time 0:00:04 | ETA 0:27:00
+[INFO] er_baseline.py:202 > Train | Sample # 130 | train_loss 0.6957 | train_acc 0.5000 | lr 0.000300 | running_time 0:00:04 | ETA 0:27:25
+[INFO] er_baseline.py:202 > Train | Sample # 132 | train_loss 0.7558 | train_acc 0.3438 | lr 0.000300 | running_time 0:00:04 | ETA 0:27:58
+[INFO] er_baseline.py:202 > Train | Sample # 134 | train_loss 1.0851 | train_acc 0.5312 | lr 0.000300 | running_time 0:00:04 | ETA 0:28:14
